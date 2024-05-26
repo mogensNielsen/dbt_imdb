@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: dim_movie_year
+    description: Dimension with unique years from the IMDB movies data set
+    columns:
+      - name: year
+        data_tests:
+          - unique
