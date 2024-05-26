@@ -1,0 +1,6 @@
+version: 2
+
+seeds:
+    - name: imdb_movies_dataset
+      config:
+        quote_columns: true
