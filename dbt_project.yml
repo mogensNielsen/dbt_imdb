@@ -36,7 +36,7 @@ seeds:
 
 models:
   dbt_imdb:
-    stage:
+    staging:
       +materialized: view
       +schema: staging
     imdb:
