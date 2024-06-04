@@ -37,8 +37,8 @@ seeds:
 models:
   dbt_imdb:
     staging:
-      +materialized: view
+      +materialized: table
       +schema: staging
     marts:
-      +materialized: table
+      +materialized: view
       +schema: marts
