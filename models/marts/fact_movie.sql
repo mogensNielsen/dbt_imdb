@@ -8,7 +8,7 @@ imdb_movies as (
 remove_null_duration as (
     select *
     from imdb_movies
-    where duration is null
+    where duration is not null
 )
 
 select
@@ -17,4 +17,4 @@ select
     genre,
     duration,
     sysdate() as dbt_last_loaded_datetime
-from imdb_movies
+from remove_null_duration
