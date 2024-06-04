@@ -9,5 +9,6 @@ select
     title,
     year,
     genre,
-    duration
+    duration,
+    sysdate() as dbt_last_loaded_datetime
 from imdb_movies
