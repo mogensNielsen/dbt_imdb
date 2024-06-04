@@ -3,7 +3,7 @@ version: 2
 exposures:
   - name: exposure_movie_facts
     label: Movie facts
-    type: Fact table
+    type: analysis
     maturity: medium
     url: https://www.imdb.com
     description: |
