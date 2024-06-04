@@ -1,4 +1,4 @@
-# dbt fagkveld
+# dbt demo
 
 - When you run dbt Core from the command line, it reads your `dbt_project.yml` file to find the profile name, and then looks for a profile with the same name in your `profiles.yml` file
   - dbt will search the current working directory for the `profiles.yml` file and will default to the `~/.dbt/` directory if not found.

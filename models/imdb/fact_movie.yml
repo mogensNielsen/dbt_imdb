@@ -1,0 +1,20 @@
+version: 2
+
+exposures:
+  - name: exposure_movie_facts
+    label: Movie facts
+    type: Fact table
+    maturity: medium
+    url: https://www.imdb.com
+    description: |
+      An exposure on the table `fact_movie`.
+      Contains:
+       - Title
+       - Year
+       - Genre
+       - Duration
+    depends_on:
+      - ref('fact_movie')
+    owner:
+      name: Mogens Nielsen
+      email: mogens.nielsen@company.no
