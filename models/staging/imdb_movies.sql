@@ -21,7 +21,8 @@ renamed as (
         "Description" as description,
         "Review Count" as review_count,
         "Review Title" as review_title,
-        "Review" as review
+        "Review" as review,
+        sysdate() as dbt_last_loaded_datetime
     from imdb_movie_dataset
 ),
 

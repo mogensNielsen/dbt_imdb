@@ -15,5 +15,7 @@ final as (
     from distinct_genres
 )
 
-select *
+select
+    *,
+    sysdate() as dbt_last_loaded_datetime
 from final
