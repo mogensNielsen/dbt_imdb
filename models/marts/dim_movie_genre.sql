@@ -13,6 +13,7 @@ distinct_genres as (
 final as (
     select *
     from distinct_genres
+    where genre is not null
 )
 
 select

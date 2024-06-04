@@ -13,6 +13,7 @@ distinct_years as (
 final as (
     select *
     from distinct_years
+    where year is not null
 )
 
 select
