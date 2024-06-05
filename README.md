@@ -2,17 +2,29 @@
 
 ## Talking points
 
+### Writing models
+
+SQL and Jinja
+
+Easy to search in
+
+Easy to integrate with git
+
+Easy to learn (given that you know SQL)
+
+Free: dbt-core
+Paid: dbt Cloud
+
 ### `dbt init`
+
+Creates folders and files needed
+Almost all of them, `packages.yml` is not created
 
 ### Packages and `dbt deps`
 
 `packages.yml` contains packages needed for the project
 
 `dbt deps` installs packages defined in `packages.yml`
-
-### Writing models
-
-SQL and Jinja
 
 ### Defining models
 
@@ -23,6 +35,9 @@ Can enforce contracts and versioning if wanted/needed
 Can define exposures
 
 ### Compiling, running, testing and building models
+
+When running several models, dbt creates a DAG (Directed Acyclical Graph) and runs models in correct order.
+Need to use `source` and `ref` to get the correct DAG.
 
 `dbt [compile|run|build|test] -s [space separated list of models]`
 
@@ -36,7 +51,7 @@ Can define exposures
 
 ### Documentation and explore
 
-`dbt docs generate` generates `manifest.json` which contains all info about project
+`dbt docs generate` generates `manifest.json` which contains all info about project, models and columns
 
 `dbt docs serve` serves the documentation as web pages
 
