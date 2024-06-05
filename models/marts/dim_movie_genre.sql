@@ -12,7 +12,7 @@ distinct_genres as (
 
 add_pk as (
     select
-        {{ dbt_utils.generate_surrogate_key(['genre']) }} as pk_dim_genre,
+        {{ dbt_utils.generate_surrogate_key(['genre']) }} as pk_dim_movie_genre,
         *
     from distinct_genres
     where genre is not null
