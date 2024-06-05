@@ -9,6 +9,7 @@ SQL and Jinja
 Easy to search in
 
 Easy to integrate with git
+GitHub actions to lint and run PR in a separate environment before approval
 
 Easy to learn (given that you know SQL)
 
