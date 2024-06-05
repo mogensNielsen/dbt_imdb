@@ -4,7 +4,15 @@ models:
   - name: dim_movie_year
     description: Dimension with unique years from the IMDB movies data set
     columns:
-      - name: year
+      - name: pk_dim_movie_year
+        description: Hashed surrogate primary key
         data_tests:
           - not_null
           - unique
+      - name: year
+        description: The year
+        data_tests:
+          - not_null
+          - unique
+      - name: dbt_last_loaded_datetime
+        description: Datetime of when the row was loaded by dbt

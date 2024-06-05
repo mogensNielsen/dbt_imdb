@@ -1,5 +1,21 @@
 version: 2
 
+models:
+  - name: fact_movie
+    description: |
+      Fact table of movies with attributes:
+      - title
+      - year
+      - genre
+
+      and measure
+      - duration
+    columns:
+      - name: fk_dim_movie_year
+        description: Foreign key to dim_movie_year
+      - name: dbt_last_loaded_datetime
+        description: Datetime of when the row was loaded by dbt
+
 exposures:
   - name: exposure_movie_facts
     label: Movie facts
