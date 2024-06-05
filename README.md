@@ -5,10 +5,11 @@
 ### Writing models
 
 SQL and Jinja
+Or Python
 
 Easy to search in
 
-Easy to integrate with git
+Easy to integrate with Git
 GitHub actions to lint and run PR in a separate environment before approval
 
 Easy to learn (given that you know SQL)
