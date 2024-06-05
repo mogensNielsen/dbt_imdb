@@ -10,8 +10,10 @@ distinct_genres as (
     from imdb_movies
 ),
 
-final as (
-    select *
+add_pk as (
+    select
+        {{ dbt_utils.generate_surrogate_key(['genre']) }} as pk_dim_genre,
+        *
     from distinct_genres
     where genre is not null
 )
@@ -19,4 +21,4 @@ final as (
 select
     *,
     sysdate() as dbt_last_loaded_datetime
-from final
+from add_pk
