@@ -4,7 +4,15 @@ models:
   - name: dim_movie_genre
     description: Dimension with unique genres from the IMDB movies data set
     columns:
-      - name: genre
+      - name: pk_dim_genre
+        description: Hashed surrogate primary key
         data_tests:
           - not_null
           - unique
+      - name: genre
+        description: Comma separated list of genres
+        data_tests:
+          - not_null
+          - unique
+      - name: dbt_last_loaded_datetime
+        description: Datetime of when the row was loaded by dbt

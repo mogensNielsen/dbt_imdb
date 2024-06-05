@@ -35,6 +35,9 @@ seeds:
       +schema: raw
 
 models:
+  +persist_docs:
+    relation: true
+    columns: true
   dbt_imdb:
     staging:
       +materialized: table
