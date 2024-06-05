@@ -65,6 +65,8 @@ With dbt Cloud, documentation and explore can be viewed there
 
 ### dbt Cloud
 
+Develop
+
 Orchestration
 - Cron schedule
 - Completion triggers
