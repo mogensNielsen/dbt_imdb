@@ -30,7 +30,7 @@ Almost all of them, `packages.yml` is not created
 
 ### Defining models
 
-Schemas and tests can be defined in Yaml files. Not necessary.
+Schemas and tests can be defined in YAML files. Not necessary.
 
 Can enforce contracts and versioning if wanted/needed
 
